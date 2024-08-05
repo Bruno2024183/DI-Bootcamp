@@ -40,54 +40,55 @@
 # info = f"Me llamo {name}, tengo {age} años y mi talla de calzado es {shoe_size}."
 
 # # Parte 5: Imprimir el mensaje de informacion
-# print (info)
+# # print (info)
 
 
-# # Crear dos variables, a y b, con valores numericos
-# a = 8
-# b = 4
+# # # Crear dos variables, a y b, con valores numericos
+# # a = 8
+# # b = 4
 
-# # Verificar si a es mayor que b
-# if a > b:
-#     print("Hello World")
+# # # Verificar si a es mayor que b
+# # if a > b:
+# #     print("Hello World")
 
 
-# # Pedir al usuario un numero
-# numero =  input("give me a number\n")
-# numero= int(numero)
-# # Determinar si el numero es par o impar
+# # # Pedir al usuario un numero
+# # numero =  input("give me a number\n")
+# # numero= int(numero)
+# # # Determinar si el numero es par o impar
 
-# if numero % 7 == 0:
-#     print("EL numero es par.")
+# # if numero % 7 == 0:
+# #     print("EL numero es par.")
+# # else:
+# #     print("El numero es impar.")
+
+
+# # Definir tu nombre
+# mi_nombre = "Bruno"
+
+
+# # Pedir al usuario su nombre
+# nombre_usuario = input("Cual es tu nombre?")
+
+
+# # Verificar si el nombre del usuario es el mismo que el tuyo
+# if nombre_usuario.lower() == mi_nombre.lower():
+#     print("Guau, tenemos el mismo nombre! No te parece sorprenderte?")
 # else:
-#     print("El numero es impar.")
+#     print(f"Hola, Pepito {nombre_usuario}! Es un nombre genial, aunque no sea Bruno.")
 
 
-# Definir tu nombre
-mi_nombre = "Bruno"
+# nombre_usuario = input("Cual es tu nombre?")
 
+# #Verificar si el nombre del usuario es el mismo que el tuyo
+# if nombre_usuario.lower() == mi_nombre.lower():
+#     print("Guau, tenemos el mismo nombre! No te parece sorprenderte?")
+# else:
+#     print(f"Hola, {Jorgito}! Es un nombre genial, aunque no sea Bruno.")
 
-# Pedir al usuario su nombre
-nombre_usuario = input("Cual es tu nombre?")
-
-
-# Verificar si el nombre del usuario es el mismo que el tuyo
-if nombre_usuario.lower() == mi_nombre.lower():
-    print("Guau, tenemos el mismo nombre! No te parece sorprenderte?")
-else:
-    print(f"Hola, Pepito {nombre_usuario}! Es un nombre genial, aunque no sea Bruno.")
-
-
-nombre_usuario = input("Cual es tu nombre?")
-
-#Verificar si el nombre del usuario es el mismo que el tuyo
-if nombre_usuario.lower() == mi_nombre.lower():
-    print("Guau, tenemos el mismo nombre! No te parece sorprenderte?")
-else:
-    print(f"Hola, {Jorgito}! Es un nombre genial, aunque no sea Bruno.")
 
 # Pedir al usuario su altura en centimetros
-altura = int(input("166"))
+altura = int(input("Por favor, ingrese su altura en centimetros"))
 
 # Determinar si la altura es mayor a 145 cm
 if altura > 145:
