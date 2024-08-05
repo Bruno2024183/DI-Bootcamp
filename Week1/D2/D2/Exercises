@@ -18,4 +18,120 @@ our_fav_numbers = my_fav_numbers.union(friend_fav_numbers)
 # Imprimir los conjuntos para verificar
 print("Mis numeros favoritos:", my_fav_numbers)
 print("Numeros favoritos de mis amigos:", friend_fav_numbers)
-print("Nuestros numeros favoritos:", our)
+print("Nuestros numeros favoritos:", our_fav_numbers)
+
+
+# Tupla original
+mi_tupla = (5, 6, 7)
+
+# Nuevos numeros a agregar
+nuevos_numeros = (7, 9)
+
+# Crear una nueva tupla combinando la tupla original con los nuevos numeros
+nueva_tupla = mi_tupla + nuevos_numeros
+
+# Imprimir la nueva Tupla
+print("Tupla original:", mi_tupla)
+print("Nueva Tupla:", nueva_tupla)
+
+
+
+# Lista inicial
+cesta = ["Banana", "Manzanas", "Naranjas", "Arandanos"]
+
+# Eliminar "Banana" de la lista
+cesta.remove("Banana")
+
+# Eliminar "Arandanos" de la lista
+cesta.remove("Arandanos")
+
+# Agregar "Kiwi" al final de la lista
+cesta.append("Kiwi")
+
+# Agregar "Manzanas" al principio de la lista
+cesta.insert(0, "Manzanas")
+
+# Contar cuantas manzanas hay en la cesta
+cantidad_manzanas = cesta.count("Manzanas")
+
+# Vaciar la cesta
+cesta.clear()
+
+# Imprimir la lista y la cantidad de manzanas
+print("Cesta vacia:", cesta)
+print("Cantidad de manzanas:", cantidad_manzanas)
+
+
+
+Un numero flotante representa numeros reales con una parte faccionaria,
+es decir que puede contener decimales. Un numero entero representa nuevos_numeros
+sin franciccion decimal o numeros completos como -3, 0, 4, 12, etc.
+
+Diferencias entre un numero entero y un numero flotante:
+1. Parte Fraccionaria: 
+    Entero: No puede tener una parte fraccionaria.
+        Ejemplo: 7, -4, 23.
+    Flotante: Puede tener parte fraccionaria.
+        Ejemeplo: 6.19, -0.288, 9.0.
+
+2. Precision:
+    Entero: Preciso y exacto en su rango.
+    FLotante: Precision limitada debido a la representacion del 
+              sietema binario. Esto puede llevar a errores de redondeo.
+
+3. Uso:
+    Entero: Usado cuando se necesita contar cosas enteras. 
+            (Personas, objetos, etc.)
+
+Generacion de una secuencia de numeros flotantes
+Para generar la secuencia 1.6, 2, 2.6, 3, 3.7, 4, 4.9, 5 sin codifificarla manualmente,
+puedes usar una lista por comprension con la funcion "arange"de Numpy. (o una alternativa
+sin Numpy)
+
+Con Numpy:
+import numpy as np
+
+# Crear una lista de numeros flotantes usando Numpy
+secuencia = np. arange(1.6, 5.5, 0.5).tolist()
+
+# Imprimir la lista
+print(secuencia)
+
+Sin Numpy
+# Crear una lista de numeros flotantes usando una lista por comprension
+secuencia = [x * 0.5 for x in range (3, 11)]
+
+# Imprimir la lista
+print(secuencia)
+
+
+
+Imprimir todos los numeros del 1 al 20, ambos inclusive:
+# Usar un bucle for para imprimir todos los numeros del 1 al 20
+for numero in range (1, 21):
+     print(numero)
+
+Imprimir todos los elementos con indice par del 1 al 20:
+# Crear una lista de numeros del 1 al 20
+numeros = list(range(1, 21))
+
+# Usar un bucle for para imprimir los elementos con indice par
+for indice in range(len(numeros)):
+     if indice % 2 ==0:
+          print(numeros[indice])
+
+
+
+# Definir tu nombre
+mi_nombre = Bruno
+
+# Inicializar una variable para la entrada del usuario
+nombre_usuario = ""
+
+# Usar un bucle para seguir pidiendo el nombre hasta que coincida con tu nombre
+while nombre_usuario.lower() != mi_nombre.lower():
+     nombre_usuario = input("Cual es tu nombre?")
+
+# Imprimir un mensaje de saludo cuando coincida
+print(f"Hola, {mi_nombre} Has ingresado el nombre correcto!")
+
