@@ -10,6 +10,9 @@ print("La division de numero1 y numero2 es", resultado)
 print("Hello World") # type: ignore
 
 
+
+12
+1
 5 < 3
 3 == 3
 3 == "3"
