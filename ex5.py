@@ -6,15 +6,24 @@ class Family:
     def born(self, **kwargs):
         self.members.append(kwargs)
         print(f"Congratulations to the {self.last_name} family on the birth of {kwargs['name']}!")
+   
     def is_18(self, name):
         for member in self.members:
             if member['name'] == name:
                 return member['age'] >= 18
+        return False
             
     def family_presentation(self):
         print(f"The {self.last_name} family:")
         for member in self.members:
-            print(f"Name: {member['name'], Age: {member['age']}, Gender }")
+            print(f"Name: {member['name'], Age: {member['age']}, Gender: {member['gender']}, Is Child: {member['is_child']}")
+
+
+class Incredibles(Family):
+    def incredible_presentation(self):
+        print(f"The {self.last_name} family of superheroes:")
+        for member in self.members:
+            print(f"Name: {member['name'], Age:{member['age']}, Gender: {member['gender']}}"
                 f"Is Child:{member['is_child']}, Power: {member['power']},"
                 f"Incredible Name: {member['incredible_name']}")
             
