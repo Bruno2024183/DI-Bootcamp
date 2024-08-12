@@ -31,7 +31,7 @@ class Zoo:
             if group_number not in grouped_animals:
                 grouped_animals[group_number] = [animal]
             else:
-                if grouped_animals[group_number][0][0] ==first_leter:
+                if grouped_animals[group_number][0][0] == first_leter:
                     grouped_animals[group_number].append(animal)
                 else:
                     group_number += 1
