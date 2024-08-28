@@ -1,46 +1,14 @@
-// Stock and prices objects
-const stock = { 
-    "banana": 6, 
-    "apple": 0,
-    "pear": 12,
-    "orange": 32,
-    "blueberry": 1
-};  
+const color = ["blue", "red", "green", "yellow", "purple"];
+const suffixes = ["st", "nd", "rd", "th", "th"];
 
-const prices = {    
-    "banana": 4, 
-    "apple": 2, 
-    "pear": 1,
-    "orange": 1.5,
-    "blueberry": 10
-}; 
-
-// Shopping list array
-const shoppingList = ["banana", "orange", "apple"];
-
-// Function to calculate the total bill
-function myBill() {
-    let total = 0;
-
-    // Loop through each item in the shopping list
-    for (let item of shoppingList) {
-        // Check if the item is in stock and has a positive stock count
-        if (item in stock && stock[item] > 0) {
-            // Add the price of the item to the total
-            total += prices[item];
-
-            // Decrease the stock of the item by 1
-            stock[item] -= 1;
-        }
-    }
-
-    // Return the total bill
-    return total;
+for (let i = 0; i < VideoColorSpace.length; i++) {
+    let suffix = suffix = suffixes [i] || "th"; // Use "th" for all numbers 4th beyond
+    console.log(My`My ${i + 1}${suffix} choice is ${colors[i]}`);
 }
 
-// Call the myBill function and log the result
-const totalBill = myBill();
-console.log("Total bill:", totalBill);
-
-// Optional: Display updated stock after shopping
-console.log("Updated stock:", stock);
+// Output:
+// My 1st choice is blue
+// My 2nd choice is red
+// My 3rd choice is green
+// My 4th choice is yellow
+// My 5th choice is purple

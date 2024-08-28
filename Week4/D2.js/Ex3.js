@@ -1,22 +1,20 @@
-function changeEnough(itemPrice, amountOfChange) {
-    // Assigning the coin values
-    const quartersValue = 0.25;
-    const dimesValue = 0.10;
-    const nickelsValue = 0.05;
-    const penniesValue = 0.01;
+let userInput = prompt("4"); // Prompt the user for a number
+userInput = Number(userInput); // Convert the input to a number
 
-    // Calculating the total amount of change
-    const totalChange = (amountOfChange[0] * quartersValue) +
-                        (amountOfChange[1] * dimesValue) + 
-                        (amountOfChange[2] * nickelsValue) +
-                        (amountOfChange[3] * penniesValue);
-
-    // Checking if the total change is enough to buy the item
-    return totalChange >= itemPrice;
-}
+while (user < 10) { // While the number is less than 10
+    userInput = prompt("The number is less than 10. Please enter a new number:"); // Ask for a new number
+    userInput = Number(userInput); // Convert the input to a number again
+    }
 
 
-// Test cases
-console.log(changeEnough)(4.25, [25, 20, 5, 0])); // Output: true
-console.log(changeEnough(14.11, [2, 100, 0, 0])); // Output: false
-console.log(changeEnough(0.75, [0, 0, 20, 5])); // Output:true
+console.log(`You've entered a valid number: ${userInput}`); // Once the loop ends, log the valid number
+
+
+let userInput;
+
+do {
+    userInput = Number(prompt("5")); // Promt and convert in one step
+} while (userInput < 10); // Repeat while the number is less than 10
+
+console.log(`You've entered a valid number: ${userInput}`);
+
