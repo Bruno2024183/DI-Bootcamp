@@ -69,3 +69,10 @@ alert(`outside of the if block ${a}`);
     
 // #5.1 - run the code in the console
 // Prediction: The first alert will show "in the if block 5". The second alert will show "outside of the if block 2".
+// Explanation: The `let` inside the `if` block creates a new block-scopred variable `a`, which is separated from the outer `a`. The outer `a` remains unchanged at 2.
+
+
+// #5.2 What will happen if the variable is declared with const instead of let ?
+// Prediction: The behaviour will be the same; the first alert will show "in the if block 5", and the second alert will show "outside of the if block 2".
+// Explanation: The block-scopred nature of `const` is similar to `let`. Since the inner `a` is not reassigned, `const` works the same way as `let` in this context.
+
