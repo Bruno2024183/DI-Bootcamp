@@ -19,3 +19,9 @@ The string 'calling' is immediately logged to the console.
 The execution of the asyncCall() function is then paused for 2 seconds due to the await keyword.
 After 2 seconds, the promise resolves with the value 'resolved'.
 The string 'resolved' is then logged to the console.
+
+
+calling
+resolved
+
+The output occurs with a 2-second delay between the two log statements. The first log ('calling') happens immediately, and the second log ('resolved') appears 2 seconds later.
